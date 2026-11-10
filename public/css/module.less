@@ -1,0 +1,49 @@
+// SPDX-FileCopyrightText: 2026 Icinga GmbH <https://icinga.com>
+// SPDX-License-Identifier: GPL-3.0-or-later
+
+.sso-login-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6em;
+  margin: 0.75em 0 1em;
+  cursor: pointer;
+
+  .sso-local-login-toggle-control {
+    appearance: none;
+    width: 2.5em;
+    height: 1.4em;
+    margin: 0;
+    border: 1px solid #777;
+    border-radius: 1em;
+    background: #777;
+    cursor: pointer;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 1em;
+      height: 1em;
+      top: 0.15em;
+      left: 0.15em;
+      border-radius: 50%;
+      background: #fff;
+      transition: transform 0.15s ease;
+    }
+
+    &:checked {
+      background: #4a9;
+      border-color: #4a9;
+    }
+
+    &:checked::before {
+      transform: translateX(1.1em);
+    }
+
+    &:focus-visible {
+      outline: 2px solid currentColor;
+      outline-offset: 2px;
+    }
+  }
+}
