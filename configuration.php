@@ -11,3 +11,10 @@ $this->provideConfigTab('providers', [
     'icon'  => 'users',
     'url'   => 'providers'
 ]);
+
+$this->provideConfigTab('settings', [
+    'label' => $this->translate('Settings'),
+    'title' => $this->translate('Configure Icinga Web SSO settings'),
+    'icon'  => 'cog',
+    'url'   => 'settings'
+]);
