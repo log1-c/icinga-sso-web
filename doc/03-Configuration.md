@@ -3,6 +3,13 @@
 Provider configurations are stored in `/etc/icingaweb2/modules/sso/providers.ini`
 and are managed through the Icinga Web frontend.
 
+## Login Page
+
+The login page includes a **Local Icinga Web login** toggle. Local username and password fields
+are shown by default; switch the toggle off to hide them and switch it back on whenever a local
+Icinga Web user needs to log in. This only changes the fields' visibility in the browser; it does
+not disable or change Icinga Web's local authentication.
+
 ## Adding a Provider
 
 1. Navigate to `Configuration → Modules → sso → Providers → New`.
